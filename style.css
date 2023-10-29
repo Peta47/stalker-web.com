@@ -140,3 +140,15 @@ ul{
 
 
 /**/
+
+footer{
+    background-color: #000000;
+    height: 4em;
+    color: #faf3f3;
+    text-align: center; 
+}
+
+footer > p{
+    margin: 0em;
+    padding-top: 1em;
+}
