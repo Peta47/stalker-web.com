@@ -34,7 +34,7 @@ ul{
 }
 
 .header_flex-item{
-    padding: 1em 0;
+    padding: 2em 0;
     gap: 1em;
     margin: auto 0 auto 0;
 }
@@ -46,17 +46,43 @@ ul{
 
 .header-title{
     margin: auto;
+    font-size: large;
+    border-top: solid;
+    padding-top: .3em;
+}
+
+.donation-button{
+    background-color: red;
+    margin: auto;
+    padding: .7em 1em;
+    border: none;
+    border-radius: 2em;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #faf3f3;
+}
+
+.donation-button:hover{
+    background: rgba(216, 29, 29, 0.7);
 }
 
 .navigation{
     list-style-type: none;
     gap: 1em;
+    margin: auto;
 }
 
 .navigation-item:hover{
-    text-decoration: underline;
-    text-underline-position: below;
+    border-bottom: solid ;
     cursor: pointer;
+}
+
+.logo{
+    background-image: url('logos/icons8-instagram.svg');
+    height: 3em;
+    width: 3em;
+    margin-top: -1em;
+    background-repeat: no-repeat;
 }
 
 
@@ -66,10 +92,10 @@ ul{
 
 .main-photo{
     background-image: linear-gradient(
-        rgba(100, 96, 96, 0.45), 
-        rgba(83, 82, 82, 0.45)),
-        url('photos/bunker.jpg');
-    background-size: cover;
+        rgba(25, 25, 25, 0.60), 
+        rgba(25, 25, 25, 0.60)),
+        url('photos/bagger.jpg');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
@@ -81,13 +107,21 @@ ul{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(33, 32, 32);
 }
 
 .main-photo-title{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 7em;
-    margin-bottom: 0
+    margin-bottom: 0;
+    color: #ffffff;
+    text-shadow: 12px 12px #000000;
+    border-bottom: solid 7px red;
+    border-left: solid 7px red;
+}
+
+.main-photo-title::first-letter{
+    color: #ff0000;
+    font-size: 900;
 }
 
 .main-photo-button{
@@ -96,10 +130,11 @@ ul{
     font-weight: 900;
     padding: .2em 1em;
     background-color:#353434;
+    margin-top: 1em;
 }
 
 .main-photo-button:hover{
-    background-color: #faf3f3;
+    background-color: #ff0000;
 }
 
 
